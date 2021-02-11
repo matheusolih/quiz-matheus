@@ -16,6 +16,10 @@ export default function Home({ navigation }) {
       <Header />
       <View style={styles.container}>
         <Text style={styles.welcome}>Bem-vindo ao quiz.</Text>
+        <Text style={styles.description}>
+          Este é um quiz contendo 15 perguntas sobre diversos assuntos, como
+          geografia, história, música e conhecimentos gerais. Boa sorte!
+        </Text>
       </View>
       <TouchableOpacity onPress={StartQuiz} style={styles.appButtonContainer}>
         <Text style={styles.appButtonText}>Iniciar quiz</Text>

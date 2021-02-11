@@ -29,6 +29,10 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 2 },
     textShadowRadius: 12,
   },
+  description: {
+    fontSize: 20,
+    textAlign: 'center',
+  },
 });
 
 export default styles;
