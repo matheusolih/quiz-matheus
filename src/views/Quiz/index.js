@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 import { RadioButton } from 'react-native-paper';
 
@@ -13,6 +13,23 @@ export default function Quiz({ navigation }) {
   const [answer, setAnswer] = useState('respostaCorreta');
   const [rightAnswers, setRightAnswers] = useState(0);
   const [finished, setFinished] = useState(false);
+
+  const [time, setTime] = useState(10 * 60);
+  const minutes = Math.floor(time / 60);
+  const seconds = time % 60;
+
+  const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
+  const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
+
+  useEffect(() => {
+    if (time > 0) {
+      setTimeout(() => {
+        setTime(time - 1);
+      }, 1000);
+    } else if (time <= 0) {
+      return setFinished(true);
+    }
+  }, [time]);
 
   function changeQuiz() {
     if (checked === null) {
@@ -38,6 +55,9 @@ export default function Quiz({ navigation }) {
   return (
     <React.Fragment>
       <Header />
+      {minuteLeft}
+      {minuteRight} : {secondLeft}
+      {secondRight}
       {!finished && (
         <React.Fragment>
           <View style={styles.imagePosition}>
