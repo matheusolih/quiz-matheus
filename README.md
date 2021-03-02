@@ -1,43 +1,45 @@
 <h1 align="center">Quiz</h1>
 
-<p align="center">Esse projeto tem como objetivo um quiz contendo 15 perguntas sobre assuntos gerais.</p>
+<p align="center">This project aims at a quiz containing 15 questions on general subjects.</p>
 
-## Pré requisitos:
+# Getting Started
 
-Antes de começar, você precisará ter instalado na sua máquina as seguintes ferramentas:
+Before you begin, you will need to have the following tools:
 
 [Git] [Expo] [VsCODE]
 <br><br/>
 
-## Clone este repositório na sua máquina
+Clone this repository
 
-$ git clone git@github.com:matheusolih/quiz-matheus.git
-<br><br/>
-
-## Acesse a pasta do projeto no terminal
-
-$ cd/quiz-matheus
-<br><br/>
-
-## Utilizando NPM
-
-### Instale as dependências utilizando o npm
-
-$ npm install
-<br><br/>
-
-### Execute o projeto
-
-$ expo web
-<br><br/>
-
-### Acesse no browser na porta 19006 (padrão)
+### `git clone git@github.com:matheusolih/quiz-matheus.git`
 
 <br><br/>
 
-### Tecnologias
+Access the project folder in the terminal
 
-## As seguintes ferramentas foram utilizadas na construção do projeto:
+### `cd/quiz-matheus`
+
+<br><br/>
+
+## Using NPM
+
+Install the dependencies
+
+### `npm install`
+
+<br><br/>
+
+Run the project:
+
+### `expo web`
+
+<br><br/>
+
+Open [http://localhost:19006](http://localhost:19006) to view it in the browser.
+
+<br><br/>
+
+## The following tools were used in the development of the project.
 
 - [React Native](https://reactnative.dev//)
 - [Expo](https://expo.io/)
